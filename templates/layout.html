@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="author" content="Eoussama">
+        <meta name="application-name" content="Game cheats">
+        <meta name="description" content="A simple flask website listing different game cheats, it's all single player, so I guess it's legal, right?">
+        <meta name="keywords" content="cheats, cheat codes, game cheats">
+
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/eomponents.css') }}">
+
+        <title>Game cheats</title>
+    </head>
+
+    <body>
+        <nav class="navbar fixed green">
+            <ul class="navitems">
+                <a href="/">
+                    <li class="navitem brand">
+                        <img class="logo" src="{{ url_for('static', filename='images/logo.svg') }}" alt="Game cheats logo"><span class=title>Game cheats</span>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+
+        <main class="container">
+            {% block body %} {% endblock %}
+        </main>
+
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/eomponents.js') }}"></script>
+    </body>
+</html>

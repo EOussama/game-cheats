@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="flex">
+        <h1>{{ games[id].title }}</h1>
+        <h2 class="text-right"><span class="cig invert">{{ games[id].type }}</span></h2>
+    </div>
+    
+    <h2 class="mt-3">Cheats</h2>
+    <hr>
+
+    <ul class="list select">
+        {% for cheat in games[id].cheats %}
+            <li class="list-item">
+                <h3>{{ cheat.cheat }}</h3>
+                <p>{{ cheat.desc }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

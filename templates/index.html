@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <header class="landleg text-center mb-3">
+        <img width="150px" src="{{ url_for('static', filename='images/logo.svg') }}" alt="Game cheats logo">
+        <h1 class="lead text-green">Game Cheats</h1>
+        <p class="text-gray">Your guide to game cheats</p>
+    </header>
+
+    <h1>Game list</h1>
+    <hr>
+
+    {% for game in games %}
+        <a href="/game/{{ game.id }}/">
+            <div class="fold green pull-center">
+                <div class="fold-header flex">
+                    <div><h4>{{ game.title }}</h4></div>
+                    <div><h5 class="text-right">{{ game.type }}</h5></div>                
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+{% endblock %}
