@@ -204,5 +204,28 @@ def Games():
                     'desc': 'Increase Wanted Level +2'
                 }
             ]
-        }
+        },
+	{
+            'id': 4,
+            'title': 'Counter-Strike 1.6',
+            'type': 'Shooter',
+            'cheats': [
+                {
+                    'cheat': 'impulse101',
+                    'desc': '$16.000'
+                },
+                {
+                    'cheat': 'skin',
+                    'desc': 'Change skins'
+                },
+                {
+                    'cheat': 'timeleft',
+                    'desc': 'Reveal how much time is left on the map'
+                },
+                {
+                    'cheat': 'unbind',
+                    'desc': 'Unbind key command'
+                }
+            ]
+        },
     ]

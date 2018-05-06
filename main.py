@@ -16,4 +16,4 @@ def game(id):
         return render_template('game.html', games = games, id = id - 1)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
